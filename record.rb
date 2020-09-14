@@ -1,13 +1,16 @@
 require 'Date'
 class Record
 
-  attr_accessor :id, :status, :date, :commission, :limit
+  attr_accessor :id, :status, :date, :commission, :limit, :amount, :sender, :receiver
 
-  def initialize(status, commission, limit)
+  def initialize(status, commission, limit, amount, sender, receiver)
     @status = status
     @date = Date.today
     @commission = commission
     @limit = limit
+    @amount = amount
+    @sender = sender
+    @receiver = receiver
   end
 
 #   def initialize
