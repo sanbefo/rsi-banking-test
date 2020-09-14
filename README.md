@@ -8,6 +8,12 @@ Use the following command in the folder where the code is located.
 ruby agent.rb
 ```
 
+To run the tests use the following command in the folder where the code is located.
+
+```console
+ruby tests.rb
+```
+
 ## How is the program structured?
 
 The program creates 3 banks, 30 accounts distributed randomly to all the banks, not necessarily evenly, and then tries to create 50
