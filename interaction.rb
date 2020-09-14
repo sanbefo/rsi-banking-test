@@ -59,12 +59,12 @@ end
   rand() > 0.5 ? intra_bank_transfer(i, banks) : inter_bank_transfer(i, banks)
 end
 
-puts "\n--------------------------------------------------------------------"
+puts "\n------------------------------------------------------------------------------------------"
 puts "SIMULATION'S REPORT"
 banks.each do |bank|
   puts "\n#{bank.name.upcase} ACCOUNTS"
   puts "Holder's name \tAmount"
-  puts "--------------------------------------------------------------------"
+  puts "------------------------------------------------------------------------------------------"
   bank.accounts.each do |account|
     puts "#{account.holders_name} \t#{account.amount}€"
   end
@@ -76,4 +76,4 @@ banks.each do |bank|
 
   puts "\n#{bank.name.upcase} COMMISSIONS: #{bank.commissions}"
 end
-puts "--------------------------------------------------------------------"
+puts "------------------------------------------------------------------------------------------"
