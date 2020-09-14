@@ -31,4 +31,4 @@ the program would be more complex.
 
 ### How would you adapt your solution if transfers are not instantaneous?
 Create a timeout so that the user would know that if the transaction is not validated within a certain amount of time, then it is discarded and
-he/she should try again
+he/she should try again.
