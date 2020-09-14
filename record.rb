@@ -1,10 +1,15 @@
+require 'Date'
 class Record
 
-  attr_accessor :id, :status, :date
+  attr_accessor :id, :status, :date, :commission, :limit
 
-  def print_name
-    puts "hola"
+  def initialize(status, commission, limit)
+    @status = status
+    @date = Date.today
+    @commission = commission
+    @limit = limit
   end
+
 #   def initialize
 #     @list = []
 #   end

@@ -1,10 +1,12 @@
 class Account
 
-  attr_accessor :id, :holder, :amount
+  attr_accessor :id, :holders_name, :amount
 
-  def print_name
-    puts "hola"
+  def initialize(holders_name, amount)
+    @holders_name = holders_name
+    @amount = amount
   end
+
 #   def initialize
 #     @list = []
 #   end

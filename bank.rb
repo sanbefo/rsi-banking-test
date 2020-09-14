@@ -1,10 +1,25 @@
+require 'Date'
 class Bank
 
-  attr_accessor :id, :name
+  attr_accessor :id, :name, :records, :accounts, :commissions
+  # attr_reader
+  # attr_writer
 
-  def print_name
-    puts "hola"
+  def initialize(name)
+    @name = name
+    @accounts = []
+    @records = []
+    commissions = 0
   end
+
+  def add_account(account)
+    @accounts << account
+  end
+
+  def add_record(record)
+    @records << record
+  end
+
 #   def initialize
 #     @list = []
 #   end
